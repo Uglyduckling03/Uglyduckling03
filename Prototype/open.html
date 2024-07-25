@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <tittle>Account Opening</tittle>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+        <style>
+            .margin{
+                color: green;
+            }
+            #Open-group {
+                width: 40%; /* make the select element full-width */
+                height: 30px; /* adjust the height to your liking */
+                font-size: 16px; /* adjust the font size to your liking */
+                padding: 5px; /* add some padding to make the text more readable */
+                height: 3em;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="text-align: right;"><button type="submit" class="btn btn-success"><a href="index.html">Return to Login</a></button></div>
+        <div style="text-align: left;"><h1>Account Opening</h1></div>
+
+        <p class="-3">Welcome to the Jaiz Bank Online Account Opening Web Service, where you can start the account openin process <br>
+        and receive an account number right away.
+        </p>
+        <div id="OpenContainer" class="container">
+            <form id="open-group">
+                <div class="open-group">
+                    <label for="Open-group"><p style="text-align:left;">What type of account would you like to open?</p></label>
+                    <select id="Open-group" name="accounttype">
+                        <option value="accounttype">Savings Account</option>
+                        <option value="accounttype">Hajj Account</option>
+                    </select>
+                </div>
+            </form>
+    </body>
+</html>

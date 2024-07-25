@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jaiz Bank - New User </title>
+        <style>
+            body{
+                font-family: Arial,  sans-serif;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background-color: #efefef;
+            }
+            .container{
+                background-color: white;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, o.1);
+            }
+            .header{
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .header img{
+                width: 100px;
+            }   
+            .header h1{
+                margin: 0;
+                font-size: 1.5cm;
+            }
+            .form-group{
+                margin-bottom: 15px;
+            }
+            .form-group label{
+                display: block;
+                margin-bottom: 5px;
+            }
+            .form-group input{
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+            .form-group select{
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+            .error{
+                color: red;
+                font-size: 0.9mm;
+                display: none;
+            }
+            .btn{
+                display: block;
+                width: 100%;
+                padding: 10px;
+                background-color: #28a745;
+                color:white;
+                border: none;
+                border-radius: 5px;
+                font-size: 1em;
+                cursor: pointer;
+            }
+            .btn:hover{
+                background-color: #218838;
+            }
+            .link{
+                text-align: center;
+                margin-top: 10px;
+            }
+            .link a{
+                color: #84da97;
+                text-decoration: none;
+            }
+            .link a:hover{
+                text-decoration: underline;
+            }
+            .hidden{
+                display: none;
+            }
+            .indemnity {
+                font-size: 0.9em;
+            }
+        </style>
+    </head>
+        <body>
+            <div id="onboardingContainer" class="container">
+                <h2 style="text-align:center;">New User Onboarding</h2>
+                <p>Please enter your user name. Protect your log in information.</p>
+                    <form id="SignUpForm">
+                        <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username"required>
+                        <div class="error" id="usernameError">Username is required</div>
+                    </div>
+                        <div class="form-group">
+                            <label for="accountNumber">Account Number:</label>
+                            <input type="text" id="accountNumber" name="accountNumber" required>
+                            <div class="error" id="accountNumberError">Account Number is required</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="verificationType">  Verification Type</label>
+                            
+                            <select id="verificationType" name="verificationType">
+                                <option value="Token">Token</option>
+                            </select>
+                        </div>
+                    <div class="form-group">
+                        <label for="tokenCode">Enter Token Code</label>
+                        <input type="text" id="tokenCode" name="tokenCode" required>
+                        <div class="error" id="tokenCodeError">Token Code is required</div>
+                    </div>
+                    <button type="button" class="btn">Continue</button>
+                    <div style="text-align: center;"><a href="index.html"><p>Return to Login</p></a></div>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>
